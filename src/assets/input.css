@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: ROBOTO;
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+
+:root {
+    --primary-color: #ec7138
+}
+
+.app__body {
+    background-image: url(/task1/src/assets/summer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.w__summer {
+    background-image: url(/task1/src/assets/summer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.w__winter {
+    background-image: url(/task1/src/assets/winter-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.w__rainy {
+    background-image: url(/task1/src/assets/rainy-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.weather_item {
+    @apply h-40 w-full border rounded-2xl flex items-center justify-center
+}

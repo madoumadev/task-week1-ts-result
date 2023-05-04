@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <div id="app__body" class="flex-1 w-full h-screen relative overflow-hidden app__body ">
+        <div class="backdrop-blur-sm bg-black bg-opacity-10 h-full w-full">
+            <div class="max-w-screen-sm  w-full mx-auto">
+                <div class="text-center py-4">
+                    <h class="text-4xl font-roboto text-theme-primary">Weather sounds</h>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <button type="button" id="w__summer" class="weather_item hover:ring-2 hover:ring-white w__summer">
+                        <span  class="w-14 h-14">
+                            <img src="/task1/src/assets/icons/sun.svg" class="w-full h-full object-cover">
+                        </span>
+                    </button>
+                    <button id="w__rainy" type="button" class="weather_item hover:ring-2 hover:ring-white w__rainy">
+                        <span  class="w-14 h-14">
+                            <img src="/task1/src/assets/icons/cloud-rain.svg" class="w-full h-full object-cover">
+                        </span>
+                    </button>
+                    <button id="w__winter" type="button" class="weather_item hover:ring-2 hoverring-white w__winter">
+                        <span  class="w-14 h-14">
+                            <img src="/task1/src/assets/icons/cloud-snow.svg" class="w-full h-full object-cover">
+                        </span>
+                    </button>
+                </div>
+                <div class="text-center mt-4">
+                    <span class="">
+                        <input id="volume" class="volume-range" type="range" min="0" max="100" value="35"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
